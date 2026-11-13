@@ -14,5 +14,6 @@ interface SiswaDao {
 
     @Query("SELECT * from tblSiswa WHERE id = :id")
     fun getSiswa(id: Int): Flow<Siswa>
+    fun getAllSiswa(): Flow<List<Siswa>>
 
 }
