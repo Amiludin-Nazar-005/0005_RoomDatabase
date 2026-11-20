@@ -26,7 +26,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.prak_pertemuan_9_pam.R
-import com.example.prak_pertemuan_9_pam.uicontroller.SiswaTopAppBar
 import com.example.prak_pertemuan_9_pam.viewmodel.EntryViewModel
 import com.example.prak_pertemuan_9_pam.viewmodel.PenyediaViewModel
 import com.example.prak_pertemuan_9_pam.uicontroller.DestinasiEntry
@@ -49,7 +48,8 @@ fun EntrySiswaScreen(
             SiswaTopAppBar(
                 title = stringResource(DestinasiEntry.titleRes),
                 canNavigateBack = true,
-                scrollBehavior = scrollBehavior
+                scrollBehavior = scrollBehavior,
+                navigateUp = navigateBack
             )
         }
     ) { innerPadding ->
